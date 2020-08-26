@@ -10,10 +10,6 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 //Routes
-/*app.all('/user', (req, res, next) => {
-    console.log('Pase por aqui');
-    next();
-});*/
 //Motor de plantilla
 app.get('/', (req, res) => {
     const data = [{name: 'Gera'}, {name:'Wendy'}, {name:'Ivan'}, {name: 'Paula'}];
